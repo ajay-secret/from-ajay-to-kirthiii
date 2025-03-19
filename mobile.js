@@ -115,3 +115,9 @@ document.querySelectorAll('.paper').forEach(paper => {
     document.getElementById('playVideoBtn').style.zIndex = highestZ - 1;
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("openBookBtn").addEventListener("click", () => {
+    window.location.href = "book.html";
+  });
+});
+
