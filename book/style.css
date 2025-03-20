@@ -1189,3 +1189,28 @@ p {
   display: block;
   margin: auto;
 }
+@media (max-width: 900px) {
+  body {
+    min-width: auto;
+    min-height: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .book {
+    width: 90vw;
+    height: 70vh;
+    transform: none;
+  }
+
+  .page {
+    width: 45vw;
+    height: 70vh;
+  }
+
+  .page img {
+    width: 100%;
+    height: auto;
+  }
+}
