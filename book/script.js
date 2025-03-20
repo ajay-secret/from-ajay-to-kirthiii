@@ -15,10 +15,17 @@ function movePage(e, page) {
     toggleClass(e.nextElementSibling, "left-side");
     
   }
-  else if (page = currentPage - 1) {
+  else if (page == currentPage - 1) {
     currentPage-=2;
     toggleClass(e, "left-side");
     toggleClass(e.previousElementSibling, "left-side");
   }
   
 }
+document.addEventListener("touchstart", function (e) {
+  let target = e.target.closest(".page");
+  if (target) {
+    let pageNum = parseInt(target.getAttribute("onclick").match(/\d+/)[0]);
+    movePage(target, pageNum);
+  }
+});
