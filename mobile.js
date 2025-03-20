@@ -109,15 +109,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 // Ensure button z-index is lower than dragged papers
 document.querySelectorAll('.paper').forEach(paper => {
   paper.addEventListener('mousedown', () => {
     document.getElementById('playVideoBtn').style.zIndex = highestZ - 1;
   });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("openBookBtn").addEventListener("click", () => {
-    window.location.href = "book.html";
+    window.location.href = "book/index.html";
   });
 });
 
